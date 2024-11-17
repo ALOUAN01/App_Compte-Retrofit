@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour le solde -->
+    <EditText
+        android:id="@+id/editSolde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Solde"
+        android:inputType="numberDecimal" />
+
+    <!-- Champ pour la date de création -->
+    <EditText
+        android:id="@+id/editDateCreation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de création"
+        android:inputType="date" />
+
+    <!-- Champ pour le type de compte -->
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type de compte" />
+
+    <!-- Bouton pour ajouter le compte -->
+    <Button
+        android:id="@+id/btnAjouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter le compte"
+        android:layout_gravity="center" />
+</LinearLayout>

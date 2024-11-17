@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvAccountId" type="id" />
+    <item name="tvBalance" type="id" />
+    <item name="tvType" type="id" />
+    <item name="tvCreatedDate" type="id" />
+    <item name="btnEdit" type="id" />
+    <item name="btnDelete" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="dateCreation" type="id" />
+
+</resources>

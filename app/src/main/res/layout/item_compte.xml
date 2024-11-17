@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Type de compte -->
+        <TextView
+            android:id="@+id/typeCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Type de compte"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Solde -->
+        <TextView
+            android:id="@+id/soldeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solde: 0"
+            android:textColor="#388E3C"
+            android:textSize="14sp" />
+
+        <!-- Date de création -->
+        <TextView
+            android:id="@+id/dateCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Date de création"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+
+        <!-- Boutons pour éditer et supprimer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <!-- Bouton Modifier (avec une icône par défaut) -->
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Modifier le compte"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="@color/primaryColor" />
+
+            <!-- Bouton Supprimer (avec une icône par défaut) -->
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Supprimer le compte"
+                android:src="@android:drawable/ic_delete"
+                app:tint="@color/errorColor" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
